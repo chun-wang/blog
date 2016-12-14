@@ -5,10 +5,10 @@
 # Site
 title: The Sea
 subtitle:
-description:
+description: 海纳百川 有容乃大
 author: Chun Wang
-language:
-timezone:
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -64,6 +64,14 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# for plugin hexo-generator-feed
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  hub:
+  content:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
