@@ -7,7 +7,7 @@ tags:
 - C++
 ---
 
-###Valgrind(memcheck)
+### Valgrind(memcheck)
 
 valgrind通过监控进程的所有内存申请、释放及内存边界，能够有效发现内存问题；
 
