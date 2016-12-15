@@ -76,4 +76,6 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:chun-wang/chun-wang.github.io.git
+  branch: master
