@@ -6,7 +6,7 @@
 title: The Sea
 subtitle:
 description: 海纳百川 有容乃大
-author: Chun Wang
+author: Charles Wang
 language: zh-Hans
 timezone: Asia/Shanghai
 
@@ -72,6 +72,9 @@ feed:
   limit: 20
   hub:
   content:
+
+# for duoshuo
+duoshuo_shortname: thesea
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
