@@ -2,8 +2,11 @@
 layout: post
 title:  "Linux线程状态"
 date:   2014-12-09 15:54:29
-category: 操作系统
-tag: [linux, system]
+category:
+    - OS
+tag:
+    - Linux
+    - Thread
 ---
 
 Linux任务状态列表：

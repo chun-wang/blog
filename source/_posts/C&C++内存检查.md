@@ -1,10 +1,11 @@
 title: "C&C++内存检查"
 date: 2015-03-30 22:51:52
 category:
-- 软件开发
+    - Develop
 tags: 
-- C
-- C++
+    - C
+    - C++
+    - 内存
 ---
 
 ### Valgrind(memcheck)

@@ -3,6 +3,8 @@ layout: post
 title: "Ruby工具"
 date: 2015-01-14 15:54:29
 category:
+    - Develop
+tags:
     - Ruby
 ---
 

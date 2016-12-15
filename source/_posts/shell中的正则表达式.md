@@ -1,10 +1,12 @@
+---
 title: shell中的正则表达式
+date: 2015-03-22 17:53:57
+categories:
+    -Develop
 tags:
   - tools
   - shell
   - regexp
-date: 2015-03-22 17:53:57
-categories: 软件开发
 ---
 
 使用方法很简单,例如要测试表达式中只含有数字:
