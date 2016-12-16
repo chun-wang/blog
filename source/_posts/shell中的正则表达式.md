@@ -2,7 +2,7 @@
 title: shell中的正则表达式
 date: 2015-03-22 17:53:57
 categories:
-    -Develop
+  - Develop
 tags:
   - tools
   - shell

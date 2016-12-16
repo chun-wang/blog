@@ -1,0 +1,33 @@
+language: node_js
+
+node_js:
+  - '4'
+
+branches:
+  only:
+    - blog
+
+env:
+  global:
+    - GH_REF: github.com/chun-wang/chun-wang.github.io.git
+    - secure: "MHytIwbrGSCLigytGoOR8SXzTrQNmoRrk0HY5lKZHAfDELWxvE4zS68nilTvJL+9zUktDuTDHhPoyeECd+6mA5uNDc9ZRHs6UbvIXKxHWlPYDf4PhR8gPJuLafbbyItVRMe39afFz3P9Tfe4CqKrQazeqzmGQBGfY0Go+4UCOBRbBSATfkJNJFz3sIKYnC2CfBI9zlt6ikNCBZLJtAG4aS7+I7WgXTlZvQvisVo0c1e6u7jdqxW69LQLkVZqVnFhiv5/Di0JCv7sbCnxPr+duFfNmPVBm5MA4r7cYOPPnBfnWk7sdIbSWHSeqwpFOTCcPY1WqO2udx1E+OKhiBq4GZlK+I+rSOU++6uXZzOMRHkip5/YJMPBFUlTKk7T9yef3gLH44QiQujWTTtUO4cbrDstFdUdsFPam4R9wANfgEuSqI/QfIeLfu84IweP5s7dG6GOpU/hhATF/TL0ij/H4vf3+aHZ4sfn/5XtHl9AUZnr3l09TtIkAyIJElrPfrjX5O06LSU7DDTz7NxsyJTv/VsoEafIfejf35WLRg5xgYabKOE04B9+T20rLcIAEuFHlrr4LD0WkA7z9j4GpW+coLUBysUZYDWxzdYdmp7D31tu8NdQ8u+EqWL/yC9lVUsIFzBmeg56J60MfryO0aRjwxKeiyrYUj2e1kICG2RXc/g="
+
+git:
+  submodules: true
+
+before_install:
+  - git config --global user.name 'Charles Wang'
+  - git config --global user.email 454774088@qq.com
+  - mv _config_theme.yml themes/next/_config.yml
+  - npm install hexo-cli -g
+
+install:
+  - cd publish
+  - git init
+  - git add --all
+  - git commit -m "Update docs"
+  - git push -f "https://${GH_TOKEN}@${GH_REF}" master:master
+
+script:
+  - npm install
+  - hexo generate

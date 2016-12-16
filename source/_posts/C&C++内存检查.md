@@ -3,9 +3,9 @@ date: 2015-03-30 22:51:52
 category:
     - Develop
 tags: 
-    - C
-    - C++
-    - 内存
+    - C/C++
+    - memory
+    - valgrind
 ---
 
 ### Valgrind(memcheck)
