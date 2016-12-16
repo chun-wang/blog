@@ -22,7 +22,7 @@ install:
 script:
   - npm install
   - hexo generate
-  - cd publish
+  - cd public
   - git init
   - git add --all
   - git commit -m "Update docs"
