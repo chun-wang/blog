@@ -22,8 +22,6 @@ install:
 script:
   - npm install
   - hexo generate
-
-deploy:
   - cd publish
   - git init
   - git add --all
