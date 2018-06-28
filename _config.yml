@@ -4,10 +4,10 @@
 
 # Site
 title: The Sea
-subtitle:
+subtitle: Chun Wang's Blog
 description: 海纳百川 有容乃大
-author: Charles Wang
-language: zh-Hans
+author: Chun Wang
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -28,7 +28,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day- :title.md.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: maupassant
 
 # for plugin hexo-generator-feed
 feed:

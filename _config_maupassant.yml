@@ -1,0 +1,103 @@
+fancybox: true
+disqus: 
+uyan: 
+livere: 
+changyan: 
+changyan_conf: 
+gitment:
+  enable: false 
+  owner: 
+  repo: 
+  client_id: 
+  client_secret: 
+gitalk:
+  enable: false 
+  owner:  
+  repo:  
+  client_id:  
+  client_secret:  
+  admin:  
+valine: 
+  enable: false 
+  appid: 
+  appkey: 
+  notify: false 
+  verify: false 
+  placeholder: Just so so 
+  avatar: 'mm' 
+  pageSize: 10 
+  guest_info: nick,mail,link 
+
+google_search: false 
+baidu_search: true 
+swiftype: 
+tinysou: 
+self_search: false 
+google_analytics: 
+baidu_analytics: 
+show_category_count: true
+toc_number: true 
+shareto: false 
+busuanzi: false 
+wordcount: true 
+widgets_on_small_screens: false 
+canvas_nest:
+  enable: false 
+  color: 
+  opacity: 
+  zIndex: 
+  count: 
+donate:
+  enable: false 
+  github: 
+  alipay_qr: 
+  wechat_qr: 
+  btc_qr: 
+  btc_key: 
+  paypal_url: 
+post_copyright:
+  enable: true 
+  author: chunwang
+  copyright_text: The author owns the copyright, please indicate the source reproduced.
+
+menu:
+  - page: home
+    directory: .
+    icon: fa-home
+  - page: archive
+    directory: archives/
+    icon: fa-archive
+  - page: about
+    directory: about/
+    icon: fa-user
+  - page: history
+    directory: timeline/
+    icon: fa-history
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
+
+widgets: 
+  - search
+  - category
+  - tag
+  - recent_posts
+  - recent_comments
+  - links
+
+links:
+  - title: Github
+    url: https://github.com/chun-wang
+
+timeline:
+  - num: 1
+    word: 2014/06/12-Start
+  - num: 2
+    word: 2018/06/28-切换主题到maupassant
+
+# Static files
+js: js
+css: css
+
+# Theme version
+version: 0.0.1
