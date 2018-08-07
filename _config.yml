@@ -90,3 +90,4 @@ deploy:
   type: git
   repo: git@github.com:chun-wang/chun-wang.github.io.git
   branch: master
+  message: message
