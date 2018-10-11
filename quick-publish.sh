@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# files changed
+git status
+
 # commit to blog
 git add --all .
 git commit -m"quick publish"
