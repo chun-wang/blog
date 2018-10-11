@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # update git
-git update
+git pull
 git submodule foreach git pull
 
 # update theme config
