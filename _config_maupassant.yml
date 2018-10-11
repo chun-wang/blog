@@ -94,6 +94,8 @@ timeline:
     word: 2014/06/12-Start
   - num: 2
     word: 2018/06/28-切换主题到maupassant
+  - num: 3
+    word: 2018/10/09-开启我的macbook写作之旅
 
 # Static files
 js: js

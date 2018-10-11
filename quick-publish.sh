@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# update git
+git update
+git submodule foreach git pull
+
+# update theme config
+cp _config_maupassant.yml themes/maupassant/_config.yml
+
 # files changed
 git status
 
