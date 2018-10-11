@@ -6,4 +6,5 @@ git commit -m"quick publish"
 git push
 
 # deploy web
+hexo clean
 hexo g -d
