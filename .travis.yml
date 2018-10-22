@@ -16,7 +16,7 @@ before_install:
   - git config --global user.email 454774088@qq.com
 
 install:
-  - mv _config_theme.yml themes/next/_config.yml
+  - mv _config_maupassant.yml themes/maupassant/_config.yml
   - npm install hexo-cli -g
 
 script:
