@@ -16,6 +16,7 @@ before_install:
 
 install:
   - mv _config_maupassant.yml themes/maupassant/_config.yml
+  - cp CNAME public/CNAME
   - npm install hexo-cli -g
 
 script:
