@@ -16,8 +16,8 @@ git commit -m"quick publish"
 git push
 
 # copy CNAME
-mkdir publish
-cp CNAME publish/
+mkdir public
+cp CNAME public/
 
 # deploy web
 hexo clean
