@@ -4,7 +4,7 @@
 
 # Site
 title: Spring Favor
-subtitle: Chun Wang's Blog
+subtitle: Wang Chun's Blog
 description: 海纳百川 有容乃大
 author: Chun Wang
 language: zh-CN
@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://chun-wang.github.io
+url: http://springfavor.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -41,7 +41,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized
