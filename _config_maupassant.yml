@@ -1,22 +1,12 @@
 fancybox: true
-disqus: 
-uyan: 
-livere: 
-changyan: 
-changyan_conf: 
+
 gitment:
-  enable: false 
-  owner: 
-  repo: 
-  client_id: 
-  client_secret: 
-gitalk:
-  enable: false 
-  owner:  
-  repo:  
-  client_id:  
-  client_secret:  
-  admin:  
+  enable: true
+  owner: chun-wang
+  repo: chun-wang.github.io
+  client_id: cedb5d41fdb586b27010
+  client_secret: 64eccb5103d95e498074fb6c263f60549842bafa
+
 valine: 
   enable: false 
   appid: 
