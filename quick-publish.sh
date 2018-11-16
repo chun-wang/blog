@@ -15,6 +15,10 @@ git add --all .
 git commit -m"quick publish"
 git push
 
+# copy CNAME
+mkdir publish
+cp CNAME publish/
+
 # deploy web
 hexo clean
 hexo g -d
