@@ -26,4 +26,4 @@ hexo g
 mkdir public
 cp CNAME public/
 
-hexo -d
+hexo deploy
