@@ -4,7 +4,7 @@ category:
   - 软件工程
 tags:
   - committer
-toc: true
+toc: false
 date: 2018-03-03 18:25:46
 ---
 
