@@ -20,9 +20,9 @@ install:
 
 script:
   - npm install
+  - ./patch.sh
   - hexo generate
   - cp CNAME public/CNAME
-  - ./patch.sh
   - cd public
   - git init
   - git add --all
