@@ -17,9 +17,11 @@ git push
 
 # deploy web
 hexo clean
+hexo g
 
+./patch.sh
 # copy CNAME
 mkdir public
 cp CNAME public/
 
-hexo g -d
+hexo -d
