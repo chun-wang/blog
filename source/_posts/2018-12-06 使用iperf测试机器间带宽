@@ -1,0 +1,131 @@
+```
+---
+title: 使用iperf测试机器间带宽
+category:
+  - 工具
+tags:
+  - iperf
+  - 带宽
+toc: true
+date: 2018-12-06 21:48:49
+---
+```
+#### 背景
+
+在做环境部署或测试时，经常会想知道两台机器间的最大网络带宽。最简单的办法就是直接在两台机器间拷贝一个大文件，通过拷贝速度就可以大致估算网络带宽，不过这一方法往往不够准确。借助iperf工具则可以简单、准确的完成这一工作。
+
+#### 在两台机器上都安装iperf
+
+如果使用的时ubuntu系统，可以直接通过apt安装
+
+~~~bash
+sudo apt-get install iperf
+~~~
+
+也可以到官网手工下载安装包安装最新版本，基本提供了常用的各类系统的版本：
+
+[https://iperf.fr/iperf-download.php](https://iperf.fr/iperf-download.php)
+
+以下测试命令均使用了`iperf3`版本
+
+#### iperf命令
+
+~~~bash
+Usage: iperf [-s|-c host] [options]
+       iperf [-h|--help] [-v|--version]
+
+Server or Client:
+  -p, --port      #         server port to listen on/connect to
+  -f, --format    [kmgKMG]  format to report: Kbits, Mbits, KBytes, MBytes
+  -i, --interval  #         seconds between periodic bandwidth reports
+  -F, --file name           xmit/recv the specified file
+  -A, --affinity n/n,m      set CPU affinity
+  -B, --bind      <host>    bind to a specific interface
+  -V, --verbose             more detailed output
+  -J, --json                output in JSON format
+  --logfile f               send output to a log file
+  -d, --debug               emit debugging output
+  -v, --version             show version information and quit
+  -h, --help                show this message and quit
+Server specific:
+  -s, --server              run in server mode
+  -D, --daemon              run the server as a daemon
+  -I, --pidfile file        write PID file
+  -1, --one-off             handle one client connection then exit
+Client specific:
+  -c, --client    <host>    run in client mode, connecting to <host>
+  -u, --udp                 use UDP rather than TCP
+  -b, --bandwidth #[KMG][/#] target bandwidth in bits/sec (0 for unlimited)
+                            (default 1 Mbit/sec for UDP, unlimited for TCP)
+                            (optional slash and packet count for burst mode)
+  -t, --time      #         time in seconds to transmit for (default 10 secs)
+  -n, --bytes     #[KMG]    number of bytes to transmit (instead of -t)
+  -k, --blockcount #[KMG]   number of blocks (packets) to transmit (instead of -                                                      t or -n)
+  -l, --len       #[KMG]    length of buffer to read or write
+                            (default 128 KB for TCP, 8 KB for UDP)
+  --cport         <port>    bind to a specific client port (TCP and UDP, default                                                      : ephemeral port)
+  -P, --parallel  #         number of parallel client streams to run
+  -R, --reverse             run in reverse mode (server sends, client receives)
+  -w, --window    #[KMG]    set window size / socket buffer size
+  -C, --congestion <algo>   set TCP congestion control algorithm (Linux and Free                                                      BSD only)
+  -M, --set-mss   #         set TCP/SCTP maximum segment size (MTU - 40 bytes)
+  -N, --no-delay            set TCP/SCTP no delay, disabling Nagle's Algorithm
+  -4, --version4            only use IPv4
+  -6, --version6            only use IPv6
+  -S, --tos N               set the IP 'type of service'
+  -L, --flowlabel N         set the IPv6 flow label (only supported on Linux)
+  -Z, --zerocopy            use a 'zero copy' method of sending data
+  -O, --omit N              omit the first n seconds
+  -T, --title str           prefix every output line with this string
+  --get-server-output       get results from server
+  --udp-counters-64bit      use 64-bit counters in UDP test packets
+  --no-fq-socket-pacing     disable fair-queuing based socket pacing
+                            (Linux only)
+
+[KMG] indicates options that support a K/M/G suffix for kilo-, mega-, or giga-
+
+iperf3 homepage at: http://software.es.net/iperf/
+Report bugs to:     https://github.com/esnet/iperf
+~~~
+
+#### 启动iperf服务端
+
+直接在命令行下执行`iperf -s`即可启动服务端，默认监听的地址是`0.0.0.0:5001`
+
+```bash
+$ iperf -s
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+```
+
+#### 启动iperf客户端
+
+启动客户端并指定连接到刚才的服务端地址，就可以启动速度测试了
+
+```bash
+$ iperf3 -c 10.247.109.99
+Connecting to host 10.247.109.99, port 5201
+[  4] local 10.37.127.241 port 58107 connected to 10.247.109.99 port 5201
+[ ID] Interval           Transfer     Bandwidth
+[  4]   0.00-1.01   sec  1.75 MBytes  14.6 Mbits/sec
+[  4]   1.01-2.01   sec  2.75 MBytes  23.1 Mbits/sec
+[  4]   2.01-3.01   sec  2.25 MBytes  18.8 Mbits/sec
+[  4]   3.01-4.01   sec  2.62 MBytes  22.0 Mbits/sec
+[  4]   4.01-5.00   sec  1.00 MBytes  8.45 Mbits/sec
+[  4]   5.00-6.00   sec  2.38 MBytes  19.9 Mbits/sec
+[  4]   6.00-7.00   sec  2.62 MBytes  22.0 Mbits/sec
+[  4]   7.00-8.00   sec  2.12 MBytes  17.8 Mbits/sec
+[  4]   8.00-9.00   sec  1.88 MBytes  15.7 Mbits/sec
+[  4]   9.00-10.00  sec  2.88 MBytes  24.1 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth
+[  4]   0.00-10.00  sec  22.2 MBytes  18.7 Mbits/sec                  sender
+[  4]   0.00-10.00  sec  22.1 MBytes  18.5 Mbits/sec                  receiver
+
+iperf Done.
+```
+
+可以看到连接的上下行速率分别是18.7Mbps和18.5Mbps。
+
