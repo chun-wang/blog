@@ -14,7 +14,9 @@ date: 2018-12-15 22:27:52
 本文主要解决两个问题：
 
 1. 支持单中心多videobridge，实现媒体流的负载均衡和能力扩展。
-2. 解决Jicofo默认的在线状态检查检测不到videobridge快速上下线问题[^1] 。
+2. 解决Jicofo默认的在线状态检查检测不到videobridge快速上下线问题。
+
+说明：Jicofo默认检查节点状态是定时查询xmpp上在线的Component，如果videobridge发生重启，首先会触发健康检查失败，Jicofo会感知videobridge下线。但如果videibridge在检查周期之前重新上线，检查器内保存的在线节点并不会有变化，因此也不会上报bridge上线的事件。
 
 #### 官方参考
 
@@ -67,4 +69,3 @@ org.jitsi.focus.pubsub.ADDRESS=example.com
 org.jitsi.jicofo.STATS_PUBSUB_NODE=sharedStatsNode
 ```
 
-[^1]: Jicofo默认检查节点状态是定时查询xmpp上在线的Component，如果videobridge发生重启，首先会触发健康检查失败，Jicofo会感知videobridge下线。但如果videibridge在检查周期之前重新上线，检查器内保存的在线节点并不会有变化，因此也不会上报bridge上线的事件。
