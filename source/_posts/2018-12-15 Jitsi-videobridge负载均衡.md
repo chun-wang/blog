@@ -16,7 +16,9 @@ date: 2018-12-15 22:27:52
 1. 支持单中心多videobridge，实现媒体流的负载均衡和能力扩展。
 2. 解决Jicofo默认的在线状态检查检测不到videobridge快速上下线问题[^1] 。
 
-#### 官方参考：
+#### 官方参考
+
+想要了解最新的配置方法，可以参考Jitsi官方的配置文档：
 
 https://github.com/jitsi/jicofo/blob/master/doc/load_balancing.md
 
