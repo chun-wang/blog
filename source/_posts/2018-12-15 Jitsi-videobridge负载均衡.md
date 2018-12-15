@@ -22,7 +22,7 @@ date: 2018-12-15 22:27:52
 
 https://github.com/jitsi/jicofo/blob/master/doc/load_balancing.md
 
-#### Prosody订阅发布
+#### Prosody订阅发布能力
 
 修改配置文件`/etc/prosody/conf.d/example.cn.cfg.lua`:
 
