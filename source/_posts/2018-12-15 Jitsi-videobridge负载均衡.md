@@ -47,7 +47,7 @@ Component "jitsi-videobridge.example.cn"
     component_secret = "65EVA9o8"
 ```
 
-#### videobridge发布在线状态
+#### Videobridge发布在线状态
 
 修改配置文件`/etc/jitsi/videobridge/sip-communicator.properties`，其中PUBSUB_SERVICE为prosody上用于发布状态的Virtualhost，PUBSUB_NODE为状态发布到的节点名称，这两个字段必须和后面Jicofo的配置保持一致。
 
@@ -58,7 +58,7 @@ org.jitsi.videobridge.PUBSUB_SERVICE=example.com
 org.jitsi.videobridge.PUBSUB_NODE=sharedStatsNode
 ```
 
-#### Jicofo订阅状态
+#### Jicofo订阅在线状态
 
 修改配置文件`/etc/jitsi/jicofo/sip-communicator.properties`，这两项配置需要和上述videibridge内的配置保持一致，这样Jicofo才能正确订阅到videobridge发布的状态信息。
 
