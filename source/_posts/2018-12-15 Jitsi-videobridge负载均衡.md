@@ -22,9 +22,9 @@ date: 2018-12-15 22:27:52
 
 https://github.com/jitsi/jicofo/blob/master/doc/load_balancing.md
 
-#### 配置Prosody支持发布
+#### Prosody订阅发布
 
-/etc/prosody/conf.d/example.cn.cfg.lua
+修改配置文件`/etc/prosody/conf.d/example.cn.cfg.lua`:
 
 1. 在modules_enabled中增加"pubsub"模块，使能订阅发布能力
 2. 增加admins设置，在里面加上需要订阅、发布的videobridge(这样JVB才有权限创建PubSub节点)
@@ -47,7 +47,7 @@ Component "jitsi-videobridge.example.cn"
     component_secret = "65EVA9o8"
 ```
 
-#### 配置videobridge状态发布
+#### videobridge发布在线状态
 
 修改配置文件`/etc/jitsi/videobridge/sip-communicator.properties`，其中PUBSUB_SERVICE为prosody上用于发布状态的Virtualhost，PUBSUB_NODE为状态发布到的节点名称，这两个字段必须和后面Jicofo的配置保持一致。
 
@@ -58,7 +58,7 @@ org.jitsi.videobridge.PUBSUB_SERVICE=example.com
 org.jitsi.videobridge.PUBSUB_NODE=sharedStatsNode
 ```
 
-#### 配置jicofo订阅状态
+#### Jicofo订阅状态
 
 修改配置文件`/etc/jitsi/jicofo/sip-communicator.properties`，这两项配置需要和上述videibridge内的配置保持一致，这样Jicofo才能正确订阅到videobridge发布的状态信息。
 
