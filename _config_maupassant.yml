@@ -6,7 +6,7 @@ changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 
 gitment:
-  enable: true
+  enable: false
   owner: chun-wang
   repo: chun-wang.github.io
   client_id: cedb5d41fdb586b27010
