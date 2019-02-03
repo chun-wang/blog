@@ -57,7 +57,7 @@ donate:
   paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
 post_copyright:
   enable: true 
-  author: chunwang
+  author: Wang Chun
   copyright_text: The author owns the copyright, please indicate the source reproduced.
 
 menu:
