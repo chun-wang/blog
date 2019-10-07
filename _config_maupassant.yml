@@ -101,6 +101,11 @@ timeline:
   - num: 5
     word: 2018/11/29-完成网站备案
 
+footer:
+  # -------------------------------------------------------------
+  # visitors count
+  counter: true
+
 # Static files
 js: js
 css: css
