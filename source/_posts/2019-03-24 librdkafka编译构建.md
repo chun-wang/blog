@@ -2,7 +2,6 @@
 title: librdkafka编译构建
 category:
   - Develop
-  - 工具
 tags:
   - kafka
 toc: true
