@@ -135,6 +135,24 @@ frp                              RUNNING   pid 17601, uptime 0:05:48
 /etc/supervisor/conf.d/
 ```
 
+#### 手动生成配置文件
+
+如果安装后的版本没有自动创建上述目录和配置文件，也可以自行手动创建
+
+~~~bash
+mkdir -p /etc/supervisor/conf.d
+echo_supervisord_conf > /etc/supervisor/supervisord.conf
+~~~
+
+在配置文件末尾修改引用自定义路径
+
+~~~bash
+[include]
+files = /etc/supervisor/conf.d/*.conf
+~~~
+
+
+
 #### 配置文件规则
 
 ```bash
