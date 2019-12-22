@@ -1,7 +1,6 @@
 ---
 title: 使用supervisor进行后台服务管理
 category:
-  - Develop
   - 工具
 tags:
   - ddns
