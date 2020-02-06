@@ -8,7 +8,7 @@ git submodule foreach git pull
 cp _config_maupassant.yml themes/maupassant/_config.yml
 
 # patch
-# ./patch.sh
+./patch.sh
 
 # deploy web
 hexo clean
