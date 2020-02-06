@@ -4,7 +4,7 @@ date: 2016-12-14 23:50:13
 type: "about"
 comments: false
 ---
-#### Chunyu's blog
+#### Wang Chun's blog
 
 多年Linux系统使用和开发经验：熟练使用shell/python等脚本完成业务、工程和工具开发以及效率提升。能够熟练运用各类异常处理、gdb、coredump等定位手段快速完成问题分析、定位。
 很好的掌握基于Linux系统的软件开发能力，有数年多进程、多任务、进程通信、网络通信等方面的开发、设计经验。
