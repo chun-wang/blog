@@ -1,4 +1,4 @@
 ---
-layout: timeline
+layout: reading
 title: 阅读
 ---
