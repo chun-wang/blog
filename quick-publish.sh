@@ -15,7 +15,6 @@ hexo clean
 hexo g
 
 # copy CNAME
-mkdir public
 cp CNAME public/
 
 # deploy public
