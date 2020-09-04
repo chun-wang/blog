@@ -22,7 +22,7 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
     "hexo-wordcount": "^6.0.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "fsevents": "^1.2.9"
   }
 }
