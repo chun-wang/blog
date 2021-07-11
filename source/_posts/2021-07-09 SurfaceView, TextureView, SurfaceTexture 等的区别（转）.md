@@ -1,5 +1,5 @@
 ---
-title: SurfaceView, TextureView, SurfaceTexture 等的区别
+title: SurfaceView, TextureView, SurfaceTexture 等的区别（转）
 category:
   - 转载
 tags:
@@ -10,7 +10,7 @@ date: 2021-07-09 20:11:45
 
 
 
-> 本文由 [简悦 SimpRead](http://ksria.com/simpread/) 转码， 原文地址 [juejin.cn](https://juejin.cn/post/6844903878450741262)
+>  原文地址 [juejin.cn](https://juejin.cn/post/6844903878450741262)
 
 > SurfaceView, GLSurfaceView, SurfaceTexture 以及 TextureView 是 Android 当中名字比较绕，关系又比较密切的几个类。
 
