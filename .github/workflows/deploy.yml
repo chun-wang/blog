@@ -6,11 +6,11 @@ on:
       - master
 
 env:
-  GIT_USER: Sanonz
-  GIT_EMAIL: sanonz@126.com
+  GIT_USER: ChunWang
+  GIT_EMAIL: wangchun0410@outlook.com
   THEME_REPO: sanonz/hexo-theme-concise
   THEME_BRANCH: master
-  DEPLOY_REPO: sanonz/sanonz.github.io
+  DEPLOY_REPO: chun-wang/chun-wang.github.io
   DEPLOY_BRANCH: master
 
 jobs:
