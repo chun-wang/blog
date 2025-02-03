@@ -8,7 +8,7 @@ on:
 env:
   GIT_USER: ChunWang
   GIT_EMAIL: wangchun0410@outlook.com
-  THEME_REPO: sanonz/hexo-theme-concise
+  THEME_REPO: tufu9441/maupassant-hexo
   THEME_BRANCH: master
   DEPLOY_REPO: chun-wang/chun-wang.github.io
   DEPLOY_BRANCH: master
@@ -31,7 +31,7 @@ jobs:
         with:
           repository: ${{ env.THEME_REPO }}
           ref: ${{ env.THEME_BRANCH }}
-          path: themes/concise
+          path: themes/maupassant
 
       - name: Checkout deploy repo
         uses: actions/checkout@v4
@@ -56,6 +56,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
+          cp _config_maupassant.yml themes/maupassant/_config.yml
 
       - name: Install dependencies
         run: |
