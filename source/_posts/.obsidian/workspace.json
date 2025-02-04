@@ -93,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘 的反向链接列表"
             }
           },
           {
@@ -111,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘 的出链列表"
             }
           },
           {
@@ -137,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md"
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘 的大纲"
             }
           }
         ]
@@ -158,13 +160,14 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a596735ae4fbce3e",
+  "active": "d66eb425e389fc83",
   "lastOpenFiles": [
-    "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
     "未命名.md",
+    "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
     "Scripts/get_url.js",
     "Scripts",
     "Templates/Front-matter.md",
