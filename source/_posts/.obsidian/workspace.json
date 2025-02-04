@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
+                "file": "Templates/Front-matter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘"
+              "title": "Front-matter"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
+                "file": "Templates/Front-matter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘 的反向链接列表"
+              "title": "Front-matter 的反向链接列表"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
+                "file": "Templates/Front-matter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘 的出链列表"
+              "title": "Front-matter 的出链列表"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2019-12-19 在Mac上制作ubuntu-USB安装盘.md"
+                "file": "Templates/Front-matter.md"
               },
               "icon": "lucide-list",
-              "title": "2019-12-19 在Mac上制作ubuntu-USB安装盘 的大纲"
+              "title": "Front-matter 的大纲"
             }
           }
         ]
@@ -166,14 +166,17 @@
   },
   "active": "d66eb425e389fc83",
   "lastOpenFiles": [
-    "未命名.md",
+    "2021-07-09 SurfaceView, TextureView, SurfaceTexture 等的区别（转）.md",
+    "2019-12-17 使用supervisor进行后台服务管理.md",
+    "2019-11-09 Mac使用ffmpeg转换DTS音频.md",
+    "2019-03-24 librdkafka编译构建.md",
     "2019-12-19 在Mac上制作ubuntu-USB安装盘.md",
+    "2020-01-26 Docker安装和使用配置.md",
+    "2020-03-24 Beyond-Compare自动化脚本.md",
+    "未命名.md",
     "Scripts/get_url.js",
     "Scripts",
     "Templates/Front-matter.md",
-    "Templates",
-    "2020-01-26 Docker安装和使用配置.md",
-    "2020-03-24 Beyond-Compare自动化脚本.md",
-    "2021-07-09 SurfaceView, TextureView, SurfaceTexture 等的区别（转）.md"
+    "Templates"
   ]
 }
