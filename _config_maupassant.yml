@@ -6,59 +6,11 @@ livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 
-gitment:
-  enable: false
-  owner: chun-wang
-  repo: chun-wang.github.io
-  client_id: cedb5d41fdb586b27010
-  client_secret: 64eccb5103d95e498074fb6c263f60549842bafa
-gitalk:
-  enable: true ## If you want to use Gitment comment system please set the value to true.
-  owner: chun-wang ## Your GitHub ID, e.g. username
-  repo: chun-wang.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-  client_id: cedb5d41fdb586b27010 ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret:  64eccb5103d95e498074fb6c263f60549842bafa ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-  admin: chun-wang ## Github repo owner and collaborators, only these guys can initialize github issues.
-valine: ## https://valine.js.org
-  enable: false ## If you want to use Valine comment system, please set the value to true.
-  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
-  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
-  verify: false ## Validation code.
-  placeholder: Just so so ## Comment box placeholders.
-  avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
-  pageSize: 10 ## Number of comments per page.
-  guest_info: nick,mail,link ## Attributes of reviewers.
-minivaline: ## See: https://github.com/MiniValine/MiniValine
-  enable: false ## If you want to use MiniValine comment system, please set the value to true.
-  appId: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
-  appKey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
-  placeholder: Write a Comment ## Comment box placeholder.
-  adminEmailMd5: ## The MD5 of Admin Email to show Admin Flag.
-  math: true ## Support MathJax.
-  md: true ## Support Markdown.
-  # MiniValine's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en  | zh-CN | (and many more)
-  # More i18n info: https://github.com/MiniValine/minivaline-i18n
-  lang:
-waline: ## See: https://waline.js.org/
-  enable: false ## If you want to use Waline comment system, please set the value to true.
-  serverURL: ## Your server url, e.g. https://your-domain.vercel.app
-  pageSize: 30 ## The desired number of comments shown in each page.
-  wordLimit: 500 ## Limit the number of words in comments, 0 means no limit.
-  requiredMeta: ['nick','mail'] ## Required user information, e.g. ['nick','mail','link']
-  count: 5 ## The number comments displayed in the recent_comments widget, default is 10.
-utterances: ## See: https://utteranc.es
-  enable: false ## If you want to use Utterances comment system, please set the value to true.
-  repo: ## The repository utterances will connect to, e.g. tufu9441/comments
-  identifier: title ## The mapping between blog posts and GitHub issues.
-  theme: github-light ## Choose an Utterances theme which matches your blog.
-twikoo: ## See: https://twikoo.js.org
-  enable: false ## If you want to use twikoo comment system, please set the value to true.
-  envId: ## Tencent CloudBase envId
-  region: ## Tencent CloudBase region, e.g. ap-shanghai
-  path: ## Article path, e.g. window.location.pathname
+highlight:  
+ enable: true  
+ auto_detect: true  
+ line_number: true  
+ tab_replace:
 
 google_search: false ## Use Google search, true/false.
 baidu_search: true ## Use Baidu search, true/false.
@@ -90,6 +42,8 @@ post_copyright:
   enable: true 
   author: Wang Chun
   copyright_text: The author owns the copyright, please indicate the source reproduced.
+post_content_length: 200
+
 
 menu:
   - page: home
@@ -147,6 +101,60 @@ footer:
 # Static files
 js: js
 css: css
+
+gitment:
+  enable: false
+  owner: chun-wang
+  repo: chun-wang.github.io
+  client_id: cedb5d41fdb586b27010
+  client_secret: 64eccb5103d95e498074fb6c263f60549842bafa
+gitalk:
+  enable: true ## If you want to use Gitment comment system please set the value to true.
+  owner: chun-wang ## Your GitHub ID, e.g. username
+  repo: chun-wang.github.io ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+  client_id: cedb5d41fdb586b27010 ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret:  64eccb5103d95e498074fb6c263f60549842bafa ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  admin: chun-wang ## Github repo owner and collaborators, only these guys can initialize github issues.
+valine: ## https://valine.js.org
+  enable: false ## If you want to use Valine comment system, please set the value to true.
+  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+  verify: false ## Validation code.
+  placeholder: Just so so ## Comment box placeholders.
+  avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
+  pageSize: 10 ## Number of comments per page.
+  guest_info: nick,mail,link ## Attributes of reviewers.
+minivaline: ## See: https://github.com/MiniValine/MiniValine
+  enable: false ## If you want to use MiniValine comment system, please set the value to true.
+  appId: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appKey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  placeholder: Write a Comment ## Comment box placeholder.
+  adminEmailMd5: ## The MD5 of Admin Email to show Admin Flag.
+  math: true ## Support MathJax.
+  md: true ## Support Markdown.
+  # MiniValine's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en  | zh-CN | (and many more)
+  # More i18n info: https://github.com/MiniValine/minivaline-i18n
+  lang:
+waline: ## See: https://waline.js.org/
+  enable: false ## If you want to use Waline comment system, please set the value to true.
+  serverURL: ## Your server url, e.g. https://your-domain.vercel.app
+  pageSize: 30 ## The desired number of comments shown in each page.
+  wordLimit: 500 ## Limit the number of words in comments, 0 means no limit.
+  requiredMeta: ['nick','mail'] ## Required user information, e.g. ['nick','mail','link']
+  count: 5 ## The number comments displayed in the recent_comments widget, default is 10.
+utterances: ## See: https://utteranc.es
+  enable: false ## If you want to use Utterances comment system, please set the value to true.
+  repo: ## The repository utterances will connect to, e.g. tufu9441/comments
+  identifier: title ## The mapping between blog posts and GitHub issues.
+  theme: github-light ## Choose an Utterances theme which matches your blog.
+twikoo: ## See: https://twikoo.js.org
+  enable: false ## If you want to use twikoo comment system, please set the value to true.
+  envId: ## Tencent CloudBase envId
+  region: ## Tencent CloudBase region, e.g. ap-shanghai
+  path: ## Article path, e.g. window.location.pathname
 
 # Theme version
 version: 0.0.1
