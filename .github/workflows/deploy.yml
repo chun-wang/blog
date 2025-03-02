@@ -72,4 +72,4 @@ jobs:
           access-key-secret: ${{ secrets.ACCESS_KEY_SECRET }}
           # sts-token: "sts_token"
       - name: Deply To OSS
-        run: ossutil cp --recursive public oss://springfavor/
+        run: ossutil cp -rf public oss://springfavor/
