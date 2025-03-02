@@ -73,6 +73,23 @@ widgets:
   - recent_comments
   - links
 
+info:
+  avatar: /img/avatar.png
+  discription: To be a better man.
+  outlinkitem:
+    - name: twitter
+      outlink: https://twitter.com/username
+      message: Twitter
+    - name: envelope
+      outlink: mailto:admin@domain.com
+      message: Email
+    - name: github
+      outlink: https://github.com/username
+      message: Github
+    - name: rss
+      outlink: /atom.xml
+      message: RSS
+
 links:
   - title: Github
     url: https://github.com/chun-wang
