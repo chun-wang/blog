@@ -8,14 +8,12 @@ toc: true
 date: 2021-07-09 20:11:45
 ---
 
-
-
 >  原文地址 [juejin.cn](https://juejin.cn/post/6844903878450741262)
 
 > SurfaceView, GLSurfaceView, SurfaceTexture 以及 TextureView 是 Android 当中名字比较绕，关系又比较密切的几个类。
 
 SurfaceView, GLSurfaceView, SurfaceTexture 以及 TextureView 是 Android 当中名字比较绕，关系又比较密切的几个类。本文基于 Android 5.0(Lollipop) 的代码理一下它们的基本原理，联系与区别。
-
+<!--more-->
 SurfaceView
 -----------
 
